@@ -1,14 +1,24 @@
-
 {
   "name": "console-color",
   "description": "A tiny JavaScript utility for printing colorful console messages",
   "logo": "//volument.com/images/color-console.png",
-  "keywords": [ "minimalistic", "console", "color" ],
+  "keywords": [
+    "minimalistic",
+    "console",
+    "color"
+  ],
   "version": "1.0.0",
   "license": "MIT",
-
   "repository": {
-    "url": "git@github.com:volument/console-color.git",
+    "url": "git+ssh://git@github.com/volument/console-color.git",
     "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/volument/console-color/issues"
+  },
+  "homepage": "https://github.com/volument/console-color#readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
