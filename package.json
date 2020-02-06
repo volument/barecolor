@@ -1,5 +1,5 @@
 {
-  "name": "console-color",
+  "name": "barecolor",
   "description": "A tiny JavaScript utility for printing colorful console messages",
   "logo": "//volument.com/images/color-console.png",
   "keywords": [
@@ -10,13 +10,13 @@
   "version": "1.0.0",
   "license": "MIT",
   "repository": {
-    "url": "git+ssh://git@github.com/volument/console-color.git",
+    "url": "git+ssh://git@github.com/volument/barecolor.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/volument/console-color/issues"
+    "url": "https://github.com/volument/barecolor/issues"
   },
-  "homepage": "https://github.com/volument/console-color#readme",
+  "homepage": "https://github.com/volument/barecolor#readme",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

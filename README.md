@@ -1,15 +1,11 @@
 
 
-![Logo for console-color](https://volument.com/images/console-color.png)
+![Barecolor logo](https://volument.com/images/console-color.png)
 
-
-## Console color 💚🔵💙💛🧡🔴
-A tiny JavaScript utility for printing colorful console messages.
+An extremely tiny JavaScript utility for printing colorful console messages. Just ~15 lines of code and no dependencies. Nothing fancy.
 
 
 ### Install
-There are no dependencies so this should be instant.
-
 ```
 npm install --save-dev baretest
 ```
@@ -23,7 +19,7 @@ pnpm install --save-dev baretest
 ### Usage
 
 ``` javascript
-const print = require('console-color')
+const print = require('barecolor')
 
 // output some colors
 print.black('This is black')
