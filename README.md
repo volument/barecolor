@@ -1,6 +1,6 @@
 
 
-![Barecolor logo](https://volument.com/images/console-color.png)
+![Barecolor logo](https://volument.com/images/barecolor.png)
 
 An extremely tiny JavaScript utility for printing colorful console messages. Just ~15 lines of code and no dependencies. Nothing fancy.
 
