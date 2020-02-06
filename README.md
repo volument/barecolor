@@ -7,13 +7,13 @@ An extremely tiny JavaScript utility for printing colorful console messages. Jus
 
 ### Install
 ```
-npm install --save-dev baretest
+npm install barecolor
 ```
 
 With [pnpm](//pnpm.js.org)
 
 ```
-pnpm install --save-dev baretest
+pnpm install barecolor
 ```
 
 ### Usage
