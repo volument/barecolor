@@ -1,30 +1,18 @@
 
-/*
-  TODO 256 colors: https://github.com/jbnicolai/ansi-256-colors/blob/master/index.js
-  console.info('\x1b[38;5;103mJOOOOO')
-  process.env.TERM == xterm-256color
-*/
+const colors = { black: 30, red: 31, green: 32, yellow: 33, blue: 34, magenta: 35, cyan: 36, white: 37, gray: 90 },
+  supported = /color|ansi|cygwin|linux/i.test(process.env.TERM)
 
-const supported = /color|ansi|cygwin|linux/i.test(process.env.TERM)
 
-const colors = {
-  magenta: 35,
-  yellow: 33,
-  green: 32,
-  black: 30,
-  white: 37,
-  blue: 34,
-  cyan: 36,
-  gray: 90,
-  red: 31
-}
-
-Object.keys(colors).forEach(function (name) {
+for (let name in colors ) {
   const color = colors[name]
 
-  module.exports[name] = function(str) {
-    if (supported) str = `\u001b[${color}m${str}\u001b[39m`
-    process.stdout.write(str)
+  const fn = module.exports[name] = function(msg) {
+    if (supported) msg = `\u001b[${color}m${msg}\u001b[39m`
+    process.stdout.write(msg)
   }
 
-})
+  module.exports[name + 'ln'] = function(str) {
+    fn(str + '\n')
+  }
+
+}
